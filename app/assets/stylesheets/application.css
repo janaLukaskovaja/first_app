@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/* mixins, variables, etc. */
+
+$grayMediumLight: #eaeaea;
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+?body=1 {
+  padding-top: 60px;
+  margin:0;
+  padding:0;
+  width:100%;
+  background:#fcf6ee;
+  background-image: URL('pozadi.gif'); 
+  background-attachment: fixed; 
+  background-color: black; 
+  color: white; }
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: $grayLight;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  text-align: center;
+}
+
+.menu ul li a span {
+  padding:20px 10px;
+  background:none;
+}
+.menu ul li a:hover {
+  color:#8bbe43;
+  background:url(images/r_menu.gif) no-repeat right;
+}
+.menu ul li a:hover span {
+  color:#8bbe43;
+  background:url(images/l_menu.gif) no-repeat left;
+}
+.menu ul li a.active {
+  color:#8bbe43;
+  background:url(images/r_menu.gif) no-repeat right;
+}
+.menu ul li a.active span {
+  color:#8bbe43;
+  background:url(images/l_menu.gif) no-repeat left;
+}
+
+

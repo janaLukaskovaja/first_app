@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @company.name %>
+</p>
+
+<p>
+  <b>Company_ID:</b>
+  <%= @company.Company_ID %>
+</p>
+
+<p>
+  <b>Phone number:</b>
+  <%= @company.Phone_Number %>
+</p>
+
+<p>
+  <b>Company street:</b>
+  <%= @company.Company_street %>
+</p>
+
+<p>
+  <b>Town:</b>
+  <%= @company.Town %>
+</p>
+
+<p>
+  <b>ZIP:</b>
+  <%= @company.ZIP %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @company.Country %>
+</p>
+
+
+<%= link_to 'Upravit', edit_company_path(@company) %> |
+<%= link_to 'Zpět', companies_path %>

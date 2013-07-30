@@ -1,0 +1,36 @@
+<h1>Adresář firemních kontaktů</h1>
+
+<table border="0" cellpadding="5" cellspacing="15">
+    <th> </th>
+  <tr>
+    <th>Name</th>
+    <th>Company_ID</th>
+    <th>Phone number</th>
+    <th>Street</th>
+    <th>Town</th>
+    <th>ZIP</th>
+    <th>Country</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @companies.each do |company| %>
+  <tr>
+    <td><%= company.name %></td>
+    <td><%= company.Company_ID %></td>
+    <td><%= company.Phone_Number %></td>
+    <td><%= company.Company_street %></td>
+    <td><%= company.Town %></td>
+    <td><%= company.ZIP %></td>
+    <td><%= company.Country %></td>
+    <td><%= link_to 'Zobrazit', company %></td>
+    <td><%= link_to 'Upravit', edit_company_path(company) %></td>
+    <td><%= link_to 'Odstranit', company, method: :delete, data: { confirm: 'Jste si jisti?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Vložit nový kontakt', new_company_path %>
